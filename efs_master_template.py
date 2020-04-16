@@ -132,8 +132,7 @@ CLIENT_LIST = [
 ]
 
 SERVERS = [
-    'ef-wc-ecco-l-stage1-n1',
-    'ef-wc-ecco-l-stage1-n2'
+    'serv1'
 ]
 
 def can_paginate(operation_name=None):
