@@ -141,8 +141,7 @@ CLIENT_LIST = [
 ]
 
 SERVERS = [
-    'ef-wc-ecco-l-stage1-n1',
-    'ef-wc-ecco-l-stage1-n2'
+    'serv1'
 ]
 
 class delete_efs:
