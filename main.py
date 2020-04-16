@@ -134,8 +134,7 @@ CLIENT_LIST = [
 ]
 
 SERVERS = [
-    'ef-wc-ecco-l-stage1-n1',
-    'ef-wc-ecco-l-stage1-n2'
+    'serv1'
 ]
 
 # def get_ec2_name_tag(instance): #Pull the name of the EC2 instance, as it is a tag and not a default key:value
