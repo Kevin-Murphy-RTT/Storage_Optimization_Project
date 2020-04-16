@@ -11,53 +11,13 @@ Learn Git and GitHub without any code!
 Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
 
 
-This repository has been archived by the owner. It is now read-only.
-bigsql
-/
-pgdevops-old
-Archived
-forked from raczajko/pgdevops
-0
-1
-1
- Code Pull requests 0 Actions Projects 0 Wiki Security Insights
-pgdevops-old/lib/salt/modules/boto_efs.py /
- naveenkoppula Required libreries for salt-cloud (salt,yaml,tornado,singledispatch)
-fd95c75 on Sep 22, 2017
+
 504 lines (370 sloc)  14.5 KB"""
   
 # -*- coding: utf-8 -*-
 '''
 Connection module for Amazon EFS
 .. versionadded:: 2017.7.0
-:configuration: This module accepts explicit EFS credentials but can also
-    utilize IAM roles assigned to the instance through Instance Profiles or
-    it can read them from the ~/.aws/credentials file or from these
-    environment variables: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY.
-    Dynamic credentials are then automatically obtained from AWS API and no
-    further configuration is necessary.  More information available at:
-    .. code-block:: text
-        http://docs.aws.amazon.com/efs/latest/ug/
-            access-control-managing-permissions.html
-        http://boto3.readthedocs.io/en/latest/guide/
-            configuration.html#guide-configuration
-    If IAM roles are not used you need to specify them either in a pillar or
-    in the minion's config file
-    .. code-block:: yaml
-        efs.keyid: GKTADJGHEIQSXMKKRBJ08H
-        efs.key: askd+ghsdfjkghWupU/asdflkdfklgjsdfjajkghs
-    A region may also be specified in the configuration
-    .. code-block:: yaml
-        efs.region: us-east-1
-    If a region is not specified, the default is us-east-1.
-    It's also possible to speficy key, keyid, and region via a profile, either
-    as a passed in dict, or as a string to pull from pillars or minion config:
-    .. code-block:: yaml
-        myprofile:
-          keyid: GKTADJGHEIQSXMKKRBJ08H
-          key: askd+ghsdfjkghWupU/asdflkdfklgjsdfjajkghs
-          region: us-east-1
-:depends: boto3
 '''
 
 
@@ -209,8 +169,7 @@ CLIENT_LIST = [
 ]
 
 SERVERS = [
-    'ef-wc-ecco-l-stage1-n1',
-    'ef-wc-ecco-l-stage1-n2'
+    'serv1'
 ]
 
 def __virtual__():
