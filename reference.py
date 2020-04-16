@@ -260,10 +260,8 @@ CLIENT_LIST = [
 ]
 
 SERVERS = [
-    'ef-wc-ecco-l-stage1-n1',
-    'ef-wc-ecco-l-stage1-n2'
+    'serv1'
 ]
-
 ### I/O Functions
 
 def get_file_name(file_name_list, file_extension):
