@@ -126,11 +126,6 @@ Example Usage:
 
         Pull all ALB/ELBs for teams 5/05 and 42 into separate files, and include utilization status
 
-
-
-
-Author(s):  Kevin R. Murphy and Jacob F. Grant
-Created: 08/19/19
 """
 
 import argparse
